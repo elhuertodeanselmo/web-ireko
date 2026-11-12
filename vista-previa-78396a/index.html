@@ -182,7 +182,7 @@
       <a href="#servicios">Servicios</a>
       <a href="#trabajos">Trabajos</a>
       <a href="#contacto">Contacto</a>
-      <a class="btn btn-navy btn-sm" href="tel:+34636093320"><svg><use href="#i-phone"/></svg>636 093 320</a>
+      <a class="btn btn-navy btn-sm" href="#contacto">Pide presupuesto</a>
     </nav>
   </div>
 </header>
@@ -195,8 +195,8 @@
       <h1>Reformas integrales y nueva construcción</h1>
       <p class="lead">Nos encargamos de tu obra de principio a fin: proyecto, ejecución y entrega. Trabajamos en Madrid y en toda España.</p>
       <div class="hero-cta">
-        <a class="btn btn-wa" href="https://wa.me/34636093320?text=Hola%20Ireko%2C%20me%20gustar%C3%ADa%20pedir%20presupuesto" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Pide presupuesto</a>
-        <a class="btn btn-ghost" href="tel:+34636093320"><svg><use href="#i-phone"/></svg>636 093 320</a>
+        <a class="btn btn-white" href="#contacto">Pide presupuesto</a>
+        <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
       </div>
     </div>
     <div class="hero-art">
@@ -345,21 +345,9 @@
       <div class="intro">
         <span class="eyebrow">Contacto</span>
         <h2>¿Hablamos de tu proyecto?</h2>
-        <p>Cuéntanos qué necesitas y te respondemos lo antes posible. El presupuesto es gratuito y sin compromiso.</p>
+        <p>Cuéntanos qué necesitas en el formulario y te respondemos lo antes posible. El presupuesto es gratuito y sin compromiso.</p>
       </div>
       <div class="cards">
-        <a class="ccard" href="https://wa.me/34636093320?text=Hola%20Ireko%2C%20me%20gustar%C3%ADa%20pedir%20presupuesto" target="_blank" rel="noopener">
-          <span class="ic wa"><svg><use href="#i-wa"/></svg></span>
-          <span><small>WhatsApp</small><b>Escríbenos ahora</b></span>
-        </a>
-        <a class="ccard" href="tel:+34636093320">
-          <span class="ic"><svg><use href="#i-phone"/></svg></span>
-          <span><small>Teléfono</small><b>+34 636 093 320</b></span>
-        </a>
-        <a class="ccard" href="mailto:rogeliorodriguezsegui@gmail.com">
-          <span class="ic"><svg><use href="#i-mail"/></svg></span>
-          <span><small>Correo</small><b class="mail">rogeliorodriguezsegui@gmail.com</b></span>
-        </a>
         <div class="ccard">
           <span class="ic"><svg><use href="#i-pin"/></svg></span>
           <span><small>Zona de trabajo</small><b>Madrid y toda España</b></span>
@@ -369,7 +357,7 @@
 
     <form class="form" id="form" novalidate>
       <h3>Pide tu presupuesto</h3>
-      <p class="sub">Rellena el formulario y te contestamos por correo o por teléfono.</p>
+      <p class="sub">Rellena el formulario y te contestamos lo antes posible.</p>
       <div class="row">
         <label>Nombre<input name="Nombre" required autocomplete="name"></label>
         <label>Teléfono<input name="Teléfono" type="tel" autocomplete="tel"></label>
@@ -398,7 +386,6 @@
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/34636093320?text=Hola%20Ireko%2C%20me%20gustar%C3%ADa%20pedir%20presupuesto" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg><use href="#i-wa"/></svg></a>
 
 
 <script>
@@ -420,7 +407,7 @@
         if(j&&(j.success===true||j.success==='true')){f.reset();m.className='msg ok';m.textContent='¡Gracias! Hemos recibido tu mensaje y te contestaremos lo antes posible.';}
         else throw 0;
       })
-      .catch(function(){m.className='msg err';m.textContent='No se ha podido enviar. Llámanos al 636 093 320 o escríbenos por WhatsApp.';})
+      .catch(function(){m.className='msg err';m.textContent='No se ha podido enviar. Inténtalo de nuevo en unos minutos.';})
       .then(function(){b.disabled=false;b.textContent='Enviar mensaje';});
   });
 })();
